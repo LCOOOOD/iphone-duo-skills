@@ -1,6 +1,9 @@
 ---
 name: iphone-duo-games
 description: Adapt a game to iPhone Duo — filling the screen across every device pose, orientation locking, aspect ratio versus letterboxing, keeping touch controls out of the fold, and consistent text and control sizing while resizing. Use when the project is a game or uses a game engine such as Unity, Unreal, Godot, SpriteKit or Metal.
+metadata:
+  source: https://github.com/mirzaaghazadeh/iphone-duo-skills
+  maintained-fork: https://github.com/LCOOOOD/iphone-duo-skills
 ---
 
 # Games on iPhone Duo
@@ -144,3 +147,8 @@ described in `../iphone-duo-flutter/SKILL.md` and
 6. Verify the game still renders correctly in Split View.
 7. Test every pose in the iPhone Duo simulator in Device Hub — open, closed,
    folded, rotated.
+
+## Local references
+
+Read `references/api-index.md` for API lookup, `references/device-facts.md` for
+hardware facts, and `references/sources.md` when verifying a claim.

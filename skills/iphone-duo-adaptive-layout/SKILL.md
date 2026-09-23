@@ -1,6 +1,9 @@
 ---
 name: iphone-duo-adaptive-layout
 description: Build layouts that adapt to the iPhone Duo fold using reserved regions, division and occlusion regions, displacement patterns, and the split and overlay ArrangementView containers. Use when content or controls land in the fold, when building a split-like or overlay layout, or when custom manually-positioned UI must avoid the hinge or the under-display camera.
+metadata:
+  source: https://github.com/mirzaaghazadeh/iphone-duo-skills
+  maintained-fork: https://github.com/LCOOOOD/iphone-duo-skills
 ---
 
 # Adaptive layouts around the fold
@@ -204,3 +207,8 @@ views is:
 For hinge-driven *interaction* rather than layout, see
 `../iphone-duo-hinge-and-scenes/SKILL.md` — live hinge angle is the wrong tool
 for laying out views, and the right one for driving effects.
+
+## Local references
+
+Read `references/api-index.md` for API lookup, `references/device-facts.md` for
+hardware facts, and `references/sources.md` when verifying a claim.

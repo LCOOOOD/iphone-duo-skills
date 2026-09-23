@@ -1,6 +1,9 @@
 ---
 name: iphone-duo-readiness
 description: Audit and port an iOS app to iPhone Duo, Apple's first foldable iPhone. Use when asked to support, adapt, prepare, test, or review an app for iPhone Duo, foldable iPhone, the inner/outer display, device poses, or the fold. Entry point that routes to the layout, bars, hinge/scenes, camera, and design skills.
+metadata:
+  source: https://github.com/mirzaaghazadeh/iphone-duo-skills
+  maintained-fork: https://github.com/LCOOOOD/iphone-duo-skills
 ---
 
 # Get an iOS app ready for iPhone Duo
@@ -129,8 +132,12 @@ updated for the shapes on this device.
 | captures photo or video | `iphone-duo-camera` |
 | needs a design pass rather than a code pass | `iphone-duo-design-review` |
 
-Device numbers live in `../../reference/device-facts.md`; every API name and its
-framework is in `../../reference/api-index.md`.
+Read `references/device-facts.md` when device numbers matter and
+`references/api-index.md` when checking API names and frameworks. Use
+`references/sources.md` to verify claims against the linked official material.
+
+These references are packaged with this skill so it remains usable when
+installed on its own.
 
 ## Reporting back
 
@@ -141,6 +148,7 @@ and claiming otherwise wastes their time.
 
 ## Accuracy note
 
-These APIs were announced in September 2026 Tech Talks while Xcode 27.1 was
-still rolling out. Treat the names in this repo as the shape of the API and
-confirm exact signatures against the SDK headers before promising a build works.
+Apple has now published *Preparing your app for iPhone Duo*, and Xcode 27.1 beta
+is available. Confirm exact signatures and availability against the current
+Apple documentation and the SDK headers installed with the user's Xcode version
+before promising a build works.

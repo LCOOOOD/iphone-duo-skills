@@ -1,6 +1,9 @@
 ---
 name: iphone-duo-vertical-bars
 description: Adapt toolbars, navigation bars and tab bars for the vertical axis on iPhone Duo — item ordering, symbol vs text representations, AxisBehavior, overflow menus, visibility priority, and when to opt out. Use when toolbar items look wrong, overflow too early, or need to move to the side on the outer display.
+metadata:
+  source: https://github.com/mirzaaghazadeh/iphone-duo-skills
+  maintained-fork: https://github.com/LCOOOOD/iphone-duo-skills
 ---
 
 # Bars on the vertical axis
@@ -121,10 +124,10 @@ Opted-in custom views must either fit the bar's fixed width or lay out verticall
 on their own. Revisit their metrics — a control panel might hide its labels and
 shrink slightly when vertical to free up room.
 
-To branch on this, read `toolbarVerticalEdge` (environment value in SwiftUI,
-trait in UIKit). It's readable from the content view or from inside the item's
-own view, and it is populated only when items can be on the vertical axis — `nil`
-or unspecified otherwise.
+To branch on this, read `toolbarVerticalEdge` in the SwiftUI environment or the
+`verticalBarEdge` trait in UIKit. It's readable from the content view or from
+inside the item's own view, and it is populated only when items can be on the
+vertical axis — `nil` or unspecified otherwise.
 
 Two behavioral details worth knowing: a vertical bar has no scroll edge effect by
 default, but it *does* get a background when Reduce Transparency is on, so keep
@@ -208,3 +211,8 @@ the front camera and the status bar repositions itself.
 8. Consolidate custom overflow into the system menu, and assign
    `visibilityPriority`.
 9. Verify in every pose in Device Hub, including Split View on both sides.
+
+## Local references
+
+Read `references/api-index.md` for API lookup, `references/device-facts.md` for
+hardware facts, and `references/sources.md` when verifying a claim.

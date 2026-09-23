@@ -1,6 +1,9 @@
 ---
 name: iphone-duo-camera
 description: Build camera capture for iPhone Duo's two front cameras — the virtual front camera, the inner under-display and outer ultra-wide devices, AVCaptureDeviceDirectionCoordinator, preview mirroring and video gravity, and dual-display capture. Use when an app captures photo or video and must handle the device opening, closing or flipping.
+metadata:
+  source: https://github.com/mirzaaghazadeh/iphone-duo-skills
+  maintained-fork: https://github.com/LCOOOOD/iphone-duo-skills
 ---
 
 # Camera on iPhone Duo
@@ -143,3 +146,8 @@ is rotation. Most camera apps on this device want both.
 Apple's related articles: *Choosing a Camera by the Direction it Faces* and
 *Supporting Device Rotation in Your Camera App*. For the square sensor generally,
 see *Support the Center Stage front camera in your iOS app* from WWDC26.
+
+## Local references
+
+Read `references/api-index.md` for API lookup, `references/device-facts.md` for
+hardware facts, and `references/sources.md` when verifying a claim.

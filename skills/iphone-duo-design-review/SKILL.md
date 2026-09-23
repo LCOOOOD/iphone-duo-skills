@@ -1,6 +1,9 @@
 ---
 name: iphone-duo-design-review
 description: Review or design an iOS interface for iPhone Duo's poses — closed, open, book-folded, tabletop and tent — covering side-mounted controls, asymmetric layouts, fold avoidance, sheets, and how to use the inner display well. Use for design critique, mockup review, or deciding what a screen should look like on a foldable iPhone rather than how to code it.
+metadata:
+  source: https://github.com/mirzaaghazadeh/iphone-duo-skills
+  maintained-fork: https://github.com/LCOOOOD/iphone-duo-skills
 ---
 
 # Designing for iPhone Duo
@@ -184,3 +187,8 @@ If the project is a game, most of this doesn't apply — see
 `../iphone-duo-games/SKILL.md` instead, which covers filling the screen across
 poses, aspect ratio versus letterboxing, and keeping touch controls out of the
 fold.
+
+## Local references
+
+Read `references/api-index.md` for API lookup, `references/device-facts.md` for
+hardware facts, and `references/sources.md` when verifying a claim.

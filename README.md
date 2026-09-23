@@ -7,16 +7,17 @@
 Agent skills for building iOS apps on **iPhone Duo** — Apple's first foldable
 iPhone, announced September 9, 2026.
 
-Apple's developer material for iPhone Duo is six Tech Talk videos plus the
-[Designing for iPhone Duo](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo)
-HIG page. Xcode 27.1 and the *Preparing your app for iPhone Duo* article are still
-listed as coming. These skills distill what exists into structured guidance an
-agent can act on, plus reference sheets for device facts and the full API surface.
+Apple's developer material for iPhone Duo now includes six Tech Talk videos,
+the [Designing for iPhone Duo](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo)
+HIG page, and the published *Preparing your app for iPhone Duo* documentation.
+Xcode 27.1 beta is available. These skills distill that material into structured
+guidance an agent can act on, plus reference sheets for device facts and the API
+surface.
 
 ## Install
 
 ```bash
-npx skills add mirzaaghazadeh/iphone-duo-skills
+npx skills add LCOOOOD/iphone-duo-skills
 ```
 
 Installs all nine. The CLI detects your agent — Claude Code, Cursor, Copilot,
@@ -26,26 +27,26 @@ Useful flags:
 
 ```bash
 # just one skill
-npx skills add mirzaaghazadeh/iphone-duo-skills --skill iphone-duo-readiness
+npx skills add LCOOOOD/iphone-duo-skills --skill iphone-duo-readiness
 
 # user-level instead of project-level
-npx skills add mirzaaghazadeh/iphone-duo-skills --global
+npx skills add LCOOOOD/iphone-duo-skills --global
 
 # see what's in here without installing
-npx skills add mirzaaghazadeh/iphone-duo-skills --list
+npx skills add LCOOOOD/iphone-duo-skills --list
 ```
 
 To try a skill without installing it at all:
 
 ```bash
-npx skills use mirzaaghazadeh/iphone-duo-skills@iphone-duo-readiness
+npx skills use LCOOOOD/iphone-duo-skills@iphone-duo-readiness
 ```
 
 <details>
 <summary>Manual install</summary>
 
 ```bash
-git clone https://github.com/mirzaaghazadeh/iphone-duo-skills.git
+git clone https://github.com/LCOOOOD/iphone-duo-skills.git
 cp -r iphone-duo-skills/skills/* ~/.claude/skills/
 ```
 
@@ -53,8 +54,9 @@ Or project-level, into `.claude/skills/` in a repo.
 
 </details>
 
-Each skill is a self-contained `SKILL.md` with YAML frontmatter, so it also works
-anywhere that reads plain Markdown instructions. Restart the session and the
+Each skill has a `SKILL.md` with YAML frontmatter and its own copy of the three
+reference sheets under `references/`, so installing a single skill preserves the
+facts, API index, and source links it relies on. Restart the session and the
 skills appear; invoke one by name or just describe the task.
 
 ## The skills
@@ -148,18 +150,23 @@ arrangements.
 
 ## Accuracy
 
-Every technical claim traces to Apple's Tech Talks, the *Designing for iPhone Duo*
-HIG page, or the Newsroom announcement. Nothing is invented — but most of these
-APIs were announced while Xcode 27.1 was still rolling out, so treat the names as
-the *shape* of the API and confirm exact signatures against the SDK headers before
-relying on a build.
+Every technical claim traces to Apple's Tech Talks, the *Designing for iPhone
+Duo* HIG page, the published *Preparing your app for iPhone Duo* documentation,
+or the Newsroom announcement. Confirm exact signatures and availability against
+the current Apple documentation and the SDK headers installed with your Xcode
+version before relying on a build.
 
 A handful of toolbar API names are now confirmed by the published HIG;
 `reference/api-index.md` marks which ones.
 
 `scripts/fetch-transcripts.py` re-fetches the Tech Talk transcripts from the
 WebVTT subtitle track in each video's HLS manifest, which is how this repo was
-researched. Re-run it when Xcode 27.1 ships and the pending documentation lands.
+researched. Re-run it when Apple updates the talks or related documentation.
+
+This fork is maintained at
+[`LCOOOOD/iphone-duo-skills`](https://github.com/LCOOOOD/iphone-duo-skills) from
+the original
+[`mirzaaghazadeh/iphone-duo-skills`](https://github.com/mirzaaghazadeh/iphone-duo-skills).
 
 ## License
 

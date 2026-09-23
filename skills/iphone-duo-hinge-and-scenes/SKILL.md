@@ -1,6 +1,9 @@
 ---
 name: iphone-duo-hinge-and-scenes
 description: Use the iPhone Duo hinge angle for interactions and effects, support Split View multitasking and multiple app scenes, and pair UI across both displays with scene accessories including CameraCaptureAccessory. Use when building fold-driven effects, multi-window support, or dual-display experiences.
+metadata:
+  source: https://github.com/mirzaaghazadeh/iphone-duo-skills
+  maintained-fork: https://github.com/LCOOOOD/iphone-duo-skills
 ---
 
 # Hinge, multitasking and scenes
@@ -129,3 +132,8 @@ direction coordinator exists to answer it.
    about.
 5. For camera apps, evaluate whether a `CameraCaptureAccessory` on the outer
    display would help the person in front of the lens.
+
+## Local references
+
+Read `references/api-index.md` for API lookup, `references/device-facts.md` for
+hardware facts, and `references/sources.md` when verifying a claim.

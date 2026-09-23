@@ -1,6 +1,9 @@
 ---
 name: iphone-duo-flutter
 description: Adapt a Flutter app to iPhone Duo, Apple's first foldable iPhone — what MediaQuery gives you today, why displayFeatures does not work here, and how to bridge the iOS 27.1 reserved-region, hinge and arrangement APIs through platform channels. Use when a Flutter or Dart app needs foldable iPhone support.
+metadata:
+  source: https://github.com/mirzaaghazadeh/iphone-duo-skills
+  maintained-fork: https://github.com/LCOOOOD/iphone-duo-skills
 ---
 
 # Flutter on iPhone Duo
@@ -128,3 +131,8 @@ For what the native APIs actually do and why, read
 `../iphone-duo-adaptive-layout/SKILL.md` and
 `../iphone-duo-readiness/SKILL.md` — the design reasoning transfers directly even
 though the code doesn't.
+
+## Local references
+
+Read `references/api-index.md` for API lookup, `references/device-facts.md` for
+hardware facts, and `references/sources.md` when verifying a claim.

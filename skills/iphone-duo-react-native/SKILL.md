@@ -1,6 +1,9 @@
 ---
 name: iphone-duo-react-native
 description: Adapt a React Native or Expo app to iPhone Duo, Apple's first foldable iPhone — asymmetric safe area insets, resize handling, and how to expose the iOS 27.1 reserved-region and hinge APIs through a native module. Use when a React Native, Expo or JS-based iOS app needs foldable iPhone support.
+metadata:
+  source: https://github.com/mirzaaghazadeh/iphone-duo-skills
+  maintained-fork: https://github.com/LCOOOOD/iphone-duo-skills
 ---
 
 # React Native on iPhone Duo
@@ -130,3 +133,8 @@ The reasoning behind the native APIs is in
 `../iphone-duo-adaptive-layout/SKILL.md` and `../iphone-duo-readiness/SKILL.md`.
 The design guidance in `../iphone-duo-design-review/SKILL.md` is framework-neutral
 and applies to a React Native app unchanged.
+
+## Local references
+
+Read `references/api-index.md` for API lookup, `references/device-facts.md` for
+hardware facts, and `references/sources.md` when verifying a claim.
